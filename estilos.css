@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --rojo: #ff0000;
+    --amarillo: #ffcd00;
+    --gris: #ebe9e9;
+
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    background-color: var(--gris);
+}
+
+h1, h2{
+    font-family: "DM Serif Display", serif;
+}
+
+header{
+    text-align: center;
+    background-color: var(--rojo);
+    padding: 1em;
+}
+
+header img{
+    width: 7em;
+    padding-left: 1em;
+}
+
+nav a{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 0 1em;
+    transition: 0.3s;
+    padding-right: 1em;
+}
+
+nav a:hover{
+    color: var(--amarillo);
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+h1{
+    text-align: center;
+    margin: 1em 0;
+}
+
+#opciones article{
+    padding: 1.5em;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+#opciones p{
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+#opciones a{
+    background-color: var(--rojo);
+    padding: 0.5em;
+    border-radius: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+#opciones a:hover{
+    background-color: var(--amarillo);
+    color: var(--rojo);
+}
+
+/* MEDIA QUERIE DE TABLET */
+@media all and (min-width:768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1em;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    #opciones{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #opciones article{
+        /* width: 48%; */
+        flex: 1 0 300px;
+        margin-bottom: 0;
+    }
+}
+
+/* MEDIA QUEREY PARA ESCRITORIO */
+@media all and (min-width:1200px){
+    h1{
+        font-size: 4em;
+    }
+}
+
