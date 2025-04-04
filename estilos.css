@@ -56,6 +56,10 @@ h1{
     margin: 1em 0;
 }
 
+#opciones{
+    padding-bottom: 3em;
+}
+
 #opciones article{
     padding: 1.5em;
     border-radius: 5px;
@@ -92,6 +96,15 @@ h1{
     color: var(--rojo);
 }
 
+footer{
+    background-color: var(--rojo);
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
 /* MEDIA QUERIE DE TABLET */
 @media all and (min-width:768px){
     header{
@@ -114,10 +127,6 @@ h1{
     #opciones article{
         flex: 1 0 300px;
         margin-bottom: 0;
-    }
-
-    #opciones img{
-
     }
 }
 
